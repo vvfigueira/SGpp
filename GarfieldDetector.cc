@@ -42,20 +42,20 @@ int main(int argc,char * argv[]){
     // Definição do meio gasoso
 
     auto fMediumMagboltz = new Garfield::MediumMagboltz();
-    fMediumMagboltz->SetComposition("ar", 70., "co2", 30.);
+    fMediumMagboltz->SetComposition("ar", 90., "ch4", 10.);
     fMediumMagboltz->SetTemperature(Dim::temperaturagas/1);
     fMediumMagboltz->SetPressure(Dim::pressaogas/1);
     fMediumMagboltz->Initialise(true);
 
     // Informar o coeficiente de transferência de Penning
     
-    const double rPenning = 0.57;
+    const double rPenning = 0.21;
     const double lambdaPenning = 0.;
     fMediumMagboltz->EnablePenningTransfer(rPenning, lambdaPenning, "ar");
 
     // Arquivo .gas com informações já calculadas do gás
 
-    fMediumMagboltz->LoadGasFile("ar_70_co2_30_1000mbar.gas");
+    fMediumMagboltz->LoadGasFile("ar_90_ch4_10_1atm.gas");
 
     // Definição dos campos elétricos
 

@@ -5,7 +5,7 @@
             "includePath": [
                 "${workspaceFolder}/**",
                 "${HOME}/root/**",
-                "${GARFIELD_HOME}/install/include/**"
+                "${GARFIELD_INSTALL}/include/**"
             ],
             "defines": [],
             "compilerPath": "/usr/bin/gcc",

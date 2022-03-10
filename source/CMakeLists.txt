@@ -20,6 +20,6 @@ target_link_libraries(build Garfield::Garfield)
 # Cópia de arquivos
 #
 
-foreach(_file ar_70_co2_30_1000mbar.gas)
+foreach(_file ar_90_ch4_10_1atm.gas)
   configure_file(${_file} ${CMAKE_CURRENT_BINARY_DIR}/${_file} COPYONLY)
 endforeach()

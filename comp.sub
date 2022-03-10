@@ -1,0 +1,12 @@
+Executable = comp.sh
+Arguments = 1
+Log = comp.log
+Output = comp.out
+Error = comp.err
+should_transfer_files = YES
+transfer_input_files = source
+when_to_transfer_output = ON_EXIT
+transfer_output_files = SGpp_build/AvaPEle.txt, SGpp_build/ElePPhot.txt, SGpp_build/AvaTot.txt, SGpp_build/EleEner.txt, SGpp_build/ElePos.txt, SGpp_build/EEnerPos.txt
+RequestDisk = 500M
+RequestMemory = 1G
+Queue

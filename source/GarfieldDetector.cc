@@ -119,12 +119,12 @@ int main(int argc,char * argv[]){
 
     // Definição dos arquivos de saída de dados
                                 
-    std::ofstream xFile ("AvaPEle.txt", std::ofstream::app);
-    std::ofstream yFile ("ElePPhot.txt", std::ofstream::app);
-    std::ofstream zFile ("AvaTot.txt", std::ofstream::app);
-    std::ofstream aFile ("EleEner.txt", std::ofstream::app);
-    std::ofstream bFile ("ElePos.txt", std::ofstream::app);
-    std::ofstream cFile ("EEnerPos.txt", std::ofstream::app);
+    std::ofstream xFile ("AvaPEle.tsv", std::ofstream::app);
+    std::ofstream yFile ("ElePPhot.tsv", std::ofstream::app);
+    std::ofstream zFile ("AvaTot.tsv", std::ofstream::app);
+    std::ofstream aFile ("EleEner.tsv", std::ofstream::app);
+    std::ofstream bFile ("ElePos.tsv", std::ofstream::app);
+    std::ofstream cFile ("EEnerPos.tsv", std::ofstream::app);
 
     // Definição do método de transporte Avalanche Macroscopic
 

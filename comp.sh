@@ -9,4 +9,4 @@ source /cvmfs/sft.cern.ch/lcg/views/LCG_101/x86_64-centos7-gcc11-opt/share/Garfi
 cmake ../source
 make
 
-./build 100 #Número de Elétrons para ser simulado por Core
+./build 100

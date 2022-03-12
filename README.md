@@ -5,7 +5,7 @@
 ## Compilação
   Compilação segue o método padrão de `cmake [path_to_CMakeLists.txt]` seguido de `make`.
   
-  É possível ainda compilar e rodar a simulação com HTCondor, desde que instalado o Garfield++ na pasta `/cvmfs/sft.cern.ch/lcg/views/LCG_101/x86_64-centos7-gcc11-opt/share/Garfield/setupGarfield.sh`, para submeter um job basta utilizar o arquivo comp.sub.
+  É possível ainda compilar e rodar a simulação com HTCondor, desde que instalado o Garfield++ na pasta `/cvmfs/sft.cern.ch/lcg/views/LCG_101/x86_64-centos7-gcc11-opt/share/Garfield/setupGarfield.sh`, ou no arquivo `/cvmfs/sft.cern.ch/lcg/views/LCG_101/x86_64-centos7-gcc11-opt/setup.sh`. Para submeter um job o ideal é dividir o número de eventos em subjobs, para isso basta rodar o arquivo que está junto a simulação `~$ source mkd.sh`, isso irá criar 100 pastas nomeadas como `Run[índice]`, após isso basta submeter `~$ condor_submit comp.sub` e ao final de todas as Runs cada pasta irá conter os arquivos de 100 eventos -- Valor esse declarado em `comp.sh` que pode ser alterdo, basta mudar a seguinte linha `./build [numero de eventos por pasta] ` -- dados obtidos por cada Queue iniciada, no total 100 --  Valor declarado em `comp.sub` que pode ser alterado. Note, se for aterar este valor para mais é necessário criar mais pastas, basta alterar o valor usado no loop no arquivo `mkd.sh` --. Para excluir as pastas basta executar `~$ source rmd.sh`.
 ## Uso
   Após a compilação, será criado um arquivo binário `build`, para executá-lo basta usar `./build [Numero_de_Runs]`.
 ## Características
